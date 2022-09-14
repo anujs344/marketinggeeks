@@ -1,6 +1,6 @@
 @extends('main-admin.layouts.header')
 @section('css')
-<link rel="stylesheet" type="text/css" href="{{asset('css/login.css')}}">
+<link rel="stylesheet" type="text/css" href="{{secure_asset('css/login.css')}}">
 @endsection
 <div class="fluid-container login-page" style="display: flex">
          
@@ -11,7 +11,7 @@
           <h2>The <span>FUTURE</span> of jewell is here</h2>
           <p>With an all in one platform for the buying jewell world</p>
         </div>
-        <img src="{{asset('images/login-photo.jpg')}}" class="img-fluid rounded-top" alt="">
+        <img src="{{secure_asset('images/login-photo.jpg')}}" class="img-fluid rounded-top" alt="">
        </div>
 
        <div class="right-side">
