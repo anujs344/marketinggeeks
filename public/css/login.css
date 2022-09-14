@@ -1,0 +1,99 @@
+
+*{
+    margin: 0;
+    padding:0;
+}
+.login-page{
+   /* padding-top: 50px; */
+}
+.left-side{
+    flex-basis: 45%;
+    align-self: flex-end;
+    position: relative;
+}
+.left-side img{
+    width:100%;
+    height: 710px;
+}
+.left-side .image-input{
+    position: absolute;
+    left:110px;
+    top:40%;
+}
+.image-input h2{
+    font-size: 1.5rem;
+    background-color: white;
+    padding:10px 20px;
+}
+.image-input span{
+    /* color:white; */
+    font-size:3rem;
+    
+}
+.image-input p{
+    margin-left:50px;
+    font-size: 18px;
+    color: white;
+}
+.right-side{
+    flex-basis: 55%;
+    padding:60px 40px;
+}
+.right-side p{
+    padding-top: 10px;
+}
+.right-side label{
+    padding-bottom: 15px;
+}
+.right-side input{
+    height:60px;
+    width:70%;
+    border-radius:15px;
+}
+.right-side .input-group{
+    width: 70%;
+    border-radius:15px;
+}
+.login-btn{
+    margin: 60px 0px 20px;
+    height:50px;
+    width:200px;
+    text-align: center;
+    border-radius:10px;
+    font-size:medium;
+    font-weight: bolder;
+
+}
+span a{
+    color: rgb(171, 215, 244);
+    text-decoration: none;
+}
+
+
+/* CSS FOR RESPONSIVE */
+@media only screen and (max-width: 720px) {
+    
+    .left-side{
+        display:none;
+    }
+    .right-side{
+        display: block;
+        flex-basis:100%;
+        padding:20%;
+        margin: 0 auto;
+    }
+    .right-side p{
+        padding-top:10px;
+    }
+    .right-side label{
+        padding-bottom: 8px;
+    }
+    .right-side input{
+        height:50px;
+        width:90%;
+    }
+    .right-side .input-group{
+        width: 90%;
+    }
+    
+  }
