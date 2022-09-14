@@ -29,9 +29,10 @@
                <li class="nav-item menu-open">
                 
                 <ul class="nav nav-treeview ">
+
                   <li class="nav-item">
                     <a href="{{route('dashboard')}}" class="nav-link {{Request::is('dashboard') ? 'active' : ''}}">
-                      <i class="far fa-circle nav-icon"></i>
+                      <i class="nav-icon fas fa-tachometer-alt"></i>
                       <p>Dashboard</p>
                     </a>
                   </li>
@@ -41,69 +42,109 @@
                       <p>Customers</p>
                     </a>
                   </li>
+
                   <li class="nav-item">
-                    <a href="{{route('kitty')}}" class="nav-link {{Request::is('kitty') ? 'active' : ''}}">
-                      <i class="far fa-circle nav-icon"></i>
-                      <p>Kitty</p>
+                    <a href="#" class="nav-link">
+                      <i class="nav-icon fas fa-tree"></i>
+                      <p>
+                        Kitty
+                        <i class="fas fa-angle-left right"></i>
+                        {{-- <span class="badge badge-info right">6</span> --}}
+                      </p>
                     </a>
+                    <ul class="nav nav-treeview">
+                      <li class="nav-item">
+                        <a href="{{route('kitty')}}" class="nav-link {{Request::is('kitty') ? 'active' : ''}}">
+                          <i class="far fa-circle nav-icon"></i>
+                          <p>Kitty</p>
+                        </a>
+                      </li>
+                      <li class="nav-item">
+                        <a href="{{route('allotkitty')}}" class="nav-link {{Request::is('allotkitty') ? 'active' : ''}}">
+                          <i class="far fa-circle nav-icon"></i>
+                          <p>Allot Kitty</p>
+                        </a>
+                      </li>
+                    </ul>
                   </li>
                   <li class="nav-item">
-                    <a href="{{route('allotkitty')}}" class="nav-link {{Request::is('allotkitty') ? 'active' : ''}}">
-                      <i class="far fa-circle nav-icon"></i>
-                      <p>Allot Kitty</p>
+                    <a href="#" class="nav-link">
+                      <i class="nav-icon fas fa-copy"></i>
+                      <p>
+                        Payments
+                        <i class="fas fa-angle-left right"></i>
+                        {{-- <span class="badge badge-info right">6</span> --}}
+                      </p>
                     </a>
+                    <ul class="nav nav-treeview">
+                      <li class="nav-item">
+                        <a href="{{route('payment')}}" class="nav-link {{Request::is('payment') ? 'active' : ''}}">
+                          <i class="far fa-circle nav-icon"></i>
+                          <p>Payment</p>
+                        </a>
+                      </li>
+                      <li class="nav-item">
+                        <a href="{{route('pending_payment')}}" class="nav-link {{Request::is('pending_payment') ? 'active' : ''}}">
+                          <i class="far fa-circle nav-icon"></i>
+                          <p>Pending Payment List</p>
+                        </a>
+                      </li>
+                      <li class="nav-item">
+                        <a href="{{route('pending_installments')}}" class="nav-link {{Request::is('pending_installments') ? 'active' : ''}}">
+                          <i class="far fa-circle nav-icon"></i>
+                          <p>Pending Installments</p>
+                        </a>
+                      </li>
+                    </ul>
                   </li>
                   <li class="nav-item">
-                    <a href="{{route('payment')}}" class="nav-link {{Request::is('payment') ? 'active' : ''}}">
-                      <i class="far fa-circle nav-icon"></i>
-                      <p>Payment</p>
+                    <a href="#" class="nav-link">
+                      <i class="nav-icon fas fa-edit"></i>
+                      <p>
+                        Products
+                        <i class="fas fa-angle-left right"></i>
+                        {{-- <span class="badge badge-info right">6</span> --}}
+                      </p>
                     </a>
+                    <ul class="nav nav-treeview">
+                      <li class="nav-item">
+                        <a href="{{route('inventory')}}" class="nav-link {{Request::is('inventory') ? 'active' : ''}}">
+                          <i class="far fa-circle nav-icon"></i>
+                          <p>Inventory</p>
+                        </a>
+                      </li>
+                      <li class="nav-item">
+                        <a href="{{route('products')}}" class="nav-link {{Request::is('products') ? 'active' : ''}}">
+                          <i class="far fa-circle nav-icon"></i>
+                          <p>Products</p>
+                        </a>
+                      </li>
+                      <li class="nav-item">
+                        <a href="./index3.html" class="nav-link {{Request::is('sale') ? 'active' : ''}}">
+                          <i class="far fa-circle nav-icon"></i>
+                          <p>Sale</p>
+                        </a>
+                      </li>
+                    </ul>
                   </li>
-                  <li class="nav-item">
-                    <a href="{{route('pending_payment')}}" class="nav-link {{Request::is('pending_payment') ? 'active' : ''}}">
-                      <i class="far fa-circle nav-icon"></i>
-                      <p>Pending Payment List</p>
-                    </a>
-                  </li>
-                  <li class="nav-item">
-                    <a href="{{route('pending_installments')}}" class="nav-link {{Request::is('pending_installments') ? 'active' : ''}}">
-                      <i class="far fa-circle nav-icon"></i>
-                      <p>Pending Installments</p>
-                    </a>
-                  </li>
+                  
                   <li class="nav-item">
                     <a href="{{route('reward')}}" class="nav-link {{Request::is('reward') ? 'active' : ''}}">
                       <i class="far fa-circle nav-icon"></i>
                       <p>Reward</p>
                     </a>
                   </li>
-                  <li class="nav-item">
-                    <a href="{{route('inventory')}}" class="nav-link {{Request::is('inventory') ? 'active' : ''}}">
-                      <i class="far fa-circle nav-icon"></i>
-                      <p>Inventory</p>
-                    </a>
-                  </li>
+                 
                   <li class="nav-item">
                     <a href="./index3.html" class="nav-link {{Request::is('wallet_request') ? 'active' : ''}}">
                       <i class="far fa-circle nav-icon"></i>
                       <p>Gem Code(cmgsoon)</p>
                     </a>
                   </li>
-                  <li class="nav-item">
-                    <a href="{{route('products')}}" class="nav-link {{Request::is('products') ? 'active' : ''}}">
-                      <i class="far fa-circle nav-icon"></i>
-                      <p>Products</p>
-                    </a>
-                  </li>
-                  <li class="nav-item">
-                    <a href="./index3.html" class="nav-link {{Request::is('sale') ? 'active' : ''}}">
-                      <i class="far fa-circle nav-icon"></i>
-                      <p>Sale</p>
-                    </a>
-                  </li>
+                  
                   <li class="nav-item">
                     <a href="{{route('category')}}" class="nav-link {{Request::is('category') ? 'active' : ''}}">
-                      <i class="far fa-circle nav-icon"></i>
+                      <i class="nav-icon fas fa-table"></i>
                       <p>Category</p>
                     </a>
                   </li>
